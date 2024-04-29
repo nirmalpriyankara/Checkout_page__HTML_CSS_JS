@@ -1,319 +1,261 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+/* Add your CSS styles here */
 
-body,
-html {
-    height: 100%;
+body {
+    background-color: #f8f9fa;
+    /* Light gray background */
+    color: #333;
+    /* Dark text color for better readability */
+    font-family: Arial, sans-serif;
+    /* Common font family */
+    line-height: 1.6;
+    /* Improved line spacing for readability */
     margin: 0;
-    font-family: lato;
+    /* Remove default body margin */
 }
 
-h2 {
-    margin-bottom: 0px;
-    margin-top: 25px;
-    text-align: center;
-    font-weight: 200;
-    font-size: 19px;
-    font-size: 1.2rem;
-
-}
-.back_button{
-    background-color: #fff;
-    border: 0px;
-    margin-top: 30px;
-    
-}
-
-.container {
-    height: 100%;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
+/* Header styles */
+header {
+    background-color: #ffffff;
+    /* White header background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    background: -webkit-linear-gradient(#c5e5e5, #ccddf9);
-    background: linear-gradient(#c9e5e9, #ccddf9);
 }
 
-.dropdown-select.visible {
-    display: block;
+.logo img {
+    width: 50px;
+    /* Adjust logo size */
+    height: auto;
+    margin-right: 10px;
 }
 
-.dropdown {
-    position: relative;
-}
-
-ul {
+header h1 {
     margin: 0;
-    padding: 0;
+    font-size: 1.5em;
+    /* Larger font size for header */
+    color: #333;
+    /* Dark text color */
 }
 
-ul li {
-    list-style: none;
-    padding-left: 10px;
-    cursor: pointer;
-}
-
-ul li:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.dropdown-select {
-    position: absolute;
-    background: #77aaee;
-    text-align: left;
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    width: 90%;
-    left: 2px;
-    line-height: 2em;
-    margin-top: 2px;
-    box-sizing: border-box;
-}
-
-.thin {
-    font-weight: 400;
-}
-
-.small {
-    font-size: 12px;
-    font-size: .8rem;
-}
-
-.half-input-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.half-input-table td:first-of-type {
-    border-right: 10px solid #4488dd;
-    width: 50%;
-}
-
-.window {
-    height: 540px;
-    width: 800px;
-    background: #fff;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    z-index: 5;
-}
-
-.order-info {
-    height: 100%;
-    width: 50%;
-    padding-left: 25px;
-    padding-right: 25px;
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: relative;
-}
-
-.price {
-    bottom: 0px;
-    position: absolute;
-    right: 0px;
-    color: #4488dd;
-}
-
-.order-table td:first-of-type {
-    width: 25%;
-}
-
-.order-table {
-    position: relative;
-}
-
-.line {
-    height: 0.5px;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: #000;
-}
-
-.order-table td:last-of-type {
-    vertical-align: top;
-    padding-left: 25px;
-}
-
-.order-info-content {
-    table-layout: fixed;
-
-}
-
-.full-width {
-    width: 100%;
-}
-
-.pay-btn {
-    border: none;
-    background: #22b877;
-    line-height: 2em;
-    border-radius: 10px;
-    font-size: 19px;
-    font-size: 1.2rem;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    bottom: 25px;
-    width: calc(100% - 50px);
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-}
-
-.pay-btn:hover {
-    background: #22a877;
-    color: #eee;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-}
-
-.total {
-    margin-top: 25px;
-    font-size: 20px;
-    font-size: 1.3rem;
-    position: absolute;
-    bottom: 30px;
-    right: 27px;
-    left: 35px;
-}
-
-.dense {
-    line-height: 1.2em;
-    font-size: 16px;
-    font-size: 1rem;
-}
-
-.input-field {
-    background: rgba(255, 255, 255, 0.1);
-    margin-bottom: 10px;
-    margin-top: 3px;
-    line-height: 1.5em;
-    font-size: 20px;
-    font-size: 1.3rem;
-    border: none;
-    padding: 5px 10px 5px 10px;
-    color: #fff;
-    box-sizing: border-box;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.credit-info {
-    background: #4488dd;
-    height: 100%;
-    width: 50%;
-    color: #eee;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    font-size: 14px;
-    font-size: .9rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    box-sizing: border-box;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    position: relative;
-}
-
-.dropdown-btn {
-    background: rgba(255, 255, 255, 0.1);
-    width: 100%;
+.back-button {
+    color: #ffffff;
+    /* White text color */
+    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    text-align: center;
-    line-height: 1.5em;
-    cursor: pointer;
-    position: relative;
-    -webkit-transition: background .2s ease;
-    transition: background .2s ease;
+    /* Rounded corners */
+    background-color: #000000;
+    /* Black button color */
 }
 
-.dropdown-btn:after {
-    content: '\25BE';
-    right: 8px;
-    position: absolute;
+.back-button:hover {
+    background-color: #333333;
+    /* Darker black on hover */
 }
 
-.dropdown-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transition: background .2s ease;
-    transition: background .2s ease;
-}
-
-.dropdown-select {
-    display: none;
-}
-
-.credit-card-image {
-    display: block;
-    max-height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    margin-bottom: 15px;
-}
-
-.credit-info-content {
-    margin-top: 25px;
-    -webkit-flex-flow: column;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+/* Main section styles */
+main {
     display: flex;
-    width: 100%;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space out sections */
+    padding: 20px;
 }
 
-@media (max-width: 600px) {
-    .window {
-        width: 100%;
-        height: 100%;
-        display: block;
-        border-radius: 0px;
-    }
+/* Order summary styles */
+.order-summary {
+    width: 45%;
+    /* Take up 45% of the container */
+}
 
-    .order-info {
-        width: 100%;
-        height: auto;
-        padding-bottom: 100px;
-        border-radius: 0px;
-    }
+.order-summary h2 {
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    /* Larger font size for headings */
+}
 
-    .credit-info {
-        width: 100%;
-        height: auto;
-        padding-bottom: 100px;
-        border-radius: 0px;
-    }
+.order-summary .order-items li {
+    margin-bottom: 15px;
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center align items vertically */
+}
 
-    .pay-btn {
-        border-radius: 0px;
-    }
+.order-summary .order-items img {
+    width: 80px;
+    /* Adjusted size for product images */
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 5px;
+    /* Rounded corners for images */
+}
+
+.order-summary .order-items div {
+    flex-grow: 1;
+    /* Allow item details to grow */
+}
+
+.order-summary .subtotal,
+.order-summary .shipping,
+.order-summary .total {
+    margin-top: 20px;
+    font-weight: bold;
+    /* Bold font weight for totals */
+}
+
+/* Shipping information styles */
+.shipping-information {
+    width: 45%;
+    /* Take up 45% of the container */
+}
+
+.shipping-information h2 {
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    /* Larger font size for headings */
+}
+
+.shipping-details p {
+    margin-bottom: 10px;
+}
+
+.edit-link {
+    color: #007bff;
+    /* Blue color for edit link */
+    text-decoration: none;
+    /* Remove underline */
+    cursor: pointer;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+.shipping-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.shipping-form textarea {
+    width: 100%;
+    height: 100px;
+    /* Adjust height as needed */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    /* Rounded corners for textarea */
+    border: 1px solid #ccc;
+    /* Light gray border */
+}
+
+.shipping-form button {
+    background-color: #000000;
+    /* Black button color */
+    color: #ffffff;
+    /* White text color */
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    /* Rounded corners for button */
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    /* Larger font size for button */
+}
+
+.shipping-form button:hover {
+    background-color: #333333;
+    /* Darker black on hover */
+}
+
+/* Payment details styles */
+/* Payment details styles */
+.payment-details {
+    width: 45%;
+    /* Take up 45% of the container */
+}
+
+.payment-details h2 {
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    /* Larger font size for headings */
+}
+
+.payment-details form {
+    background-color: #f8f9fa;
+    /* Light gray background for form */
+    padding: 20px;
+    border-radius: 10px;
+    /* Rounded corners for form */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Drop shadow for form */
+}
+
+.payment-details label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    /* Dark gray text color */
+}
+
+.payment-details input[type="text"],
+.payment-details input[type="checkbox"] {
+    width: calc(100% - 22px);
+    /* Adjusted width for inputs */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    /* Rounded corners for inputs */
+    border: 1px solid #ccc;
+    /* Light gray border */
+}
+
+.payment-methods {
+    margin-top: 20px;
+}
+
+.payment-methods button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.payment-methods button img {
+    width: 150px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+.payment-methods input[type="radio"] {
+    display: none;
+    /* Hide radio buttons */
+}
+
+.payment-details button {
+    background-color: #000;
+    /* Blue button color */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    /* Rounded corners for button */
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    /* Larger font size for button */
+}
+
+.payment-details button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
 }
