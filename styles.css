@@ -2,101 +2,97 @@
 
 body {
     background-color: #f8f9fa;
-    /* Light gray background */
     color: #333;
-    /* Dark text color for better readability */
     font-family: Arial, sans-serif;
-    /* Common font family */
     line-height: 1.6;
-    /* Improved line spacing for readability */
     margin: 0;
-    /* Remove default body margin */
 }
 
-/* Header styles */
 header {
     background-color: #ffffff;
-    /* White header background */
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
 }
 
 .logo img {
-    width: 50px;
-    /* Adjust logo size */
-    height: auto;
+    height: 30px;
+    width: 30px;
     margin-right: 10px;
 }
 
-header h1 {
+.logo h1 {
     margin: 0;
     font-size: 1.5em;
-    /* Larger font size for header */
     color: #333;
-    /* Dark text color */
 }
 
 .back-button {
     color: #ffffff;
-    /* White text color */
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    /* Rounded corners */
     background-color: #000000;
-    /* Black button color */
 }
 
 .back-button:hover {
     background-color: #333333;
-    /* Darker black on hover */
 }
 
-/* Main section styles */
 main {
     display: flex;
-    /* Use flexbox for layout */
     justify-content: space-between;
-    /* Space out sections */
     padding: 20px;
 }
 
-/* Order summary styles */
-.order-summary {
-    width: 45%;
-    /* Take up 45% of the container */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    width: 100%;
 }
 
-.order-summary h2 {
+.order-summary,
+.shipping-information,
+.payment-details {
+    width: calc(33.33% - 20px);
+}
+
+.order-summary h2,
+.shipping-information h2,
+.payment-details h2 {
     color: #333;
-    /* Dark text color */
     margin-bottom: 20px;
     font-size: 1.5em;
-    /* Larger font size for headings */
 }
 
 .order-summary .order-items li {
     margin-bottom: 15px;
     display: flex;
-    /* Use flexbox for layout */
     align-items: center;
-    /* Center align items vertically */
 }
 
 .order-summary .order-items img {
     width: 80px;
-    /* Adjusted size for product images */
     height: 80px;
     margin-right: 15px;
     border-radius: 5px;
-    /* Rounded corners for images */
 }
 
 .order-summary .order-items div {
     flex-grow: 1;
-    /* Allow item details to grow */
 }
 
 .order-summary .subtotal,
@@ -104,38 +100,23 @@ main {
 .order-summary .total {
     margin-top: 20px;
     font-weight: bold;
-    /* Bold font weight for totals */
-}
-
-/* Shipping information styles */
-.shipping-information {
-    width: 45%;
-    /* Take up 45% of the container */
-}
-
-.shipping-information h2 {
-    color: #333;
-    /* Dark text color */
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    /* Larger font size for headings */
 }
 
 .shipping-details p {
     margin-bottom: 10px;
 }
 
-.edit-link {
-    color: #007bff;
-    /* Blue color for edit link */
-    text-decoration: none;
-    /* Remove underline */
+.change-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.edit-link:hover {
-    text-decoration: underline;
-    /* Underline on hover */
+.change-button:hover {
+    background-color: #0056b3;
 }
 
 .shipping-form label {
@@ -146,81 +127,35 @@ main {
 .shipping-form textarea {
     width: 100%;
     height: 100px;
-    /* Adjust height as needed */
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
-    /* Rounded corners for textarea */
     border: 1px solid #ccc;
-    /* Light gray border */
 }
 
 .shipping-form button {
     background-color: #000000;
-    /* Black button color */
     color: #ffffff;
-    /* White text color */
     padding: 15px;
     border: none;
     border-radius: 5px;
-    /* Rounded corners for button */
     cursor: pointer;
     width: 100%;
     font-size: 1.1em;
-    /* Larger font size for button */
 }
 
 .shipping-form button:hover {
     background-color: #333333;
-    /* Darker black on hover */
-}
-
-/* Payment details styles */
-/* Payment details styles */
-.payment-details {
-    width: 45%;
-    /* Take up 45% of the container */
-}
-
-.payment-details h2 {
-    color: #333;
-    /* Dark text color */
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    /* Larger font size for headings */
-}
-
-.payment-details form {
-    background-color: #f8f9fa;
-    /* Light gray background for form */
-    padding: 20px;
-    border-radius: 10px;
-    /* Rounded corners for form */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    /* Drop shadow for form */
-}
-
-.payment-details label {
-    display: block;
-    margin-bottom: 10px;
-    color: #555;
-    /* Dark gray text color */
-}
-
-.payment-details input[type="text"],
-.payment-details input[type="checkbox"] {
-    width: calc(100% - 22px);
-    /* Adjusted width for inputs */
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    /* Rounded corners for inputs */
-    border: 1px solid #ccc;
-    /* Light gray border */
 }
 
 .payment-methods {
     margin-top: 20px;
+}
+
+.payment-methods-logo-name {
+    display: inline;
+    display: flex;
+    align-items: center;
 }
 
 .payment-methods button {
@@ -231,31 +166,86 @@ main {
 }
 
 .payment-methods button img {
-    width: 150px;
-    /* Adjust size as needed */
+    width: 20px;
     height: auto;
+    margin-right: 5px;
 }
 
 .payment-methods input[type="radio"] {
     display: none;
-    /* Hide radio buttons */
+}
+
+.payment-details h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.payment-details form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.payment-details input[type="text"],
+.payment-details input[type="checkbox"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .payment-details button {
     background-color: #000;
-    /* Blue button color */
     color: white;
     padding: 15px;
     border: none;
     border-radius: 5px;
-    /* Rounded corners for button */
     cursor: pointer;
     width: 100%;
     font-size: 1.1em;
-    /* Larger font size for button */
 }
 
 .payment-details button:hover {
     background-color: #0056b3;
-    /* Darker blue on hover */
+}
+
+.payment-details .payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.payment-details .payment-methods button {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.payment-details .payment-methods img{
+    width: 15px;
+
+}
+.payment-details .payment-methods button:last-child {
+    margin-right: 0;
+}
+
+.payment-details .payment-methods button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+footer{
+    text-align: center;
 }

@@ -12,74 +12,65 @@
     <header>
         <a href="#" class="back-button">Back</a>
         <div class="logo">
-            <img src="konik-logo.png" alt="KONIK Logo">
+            <img src="images/KONIK logo Original.png" alt="KONIK Logo">
             <h1>KONIK Checkout</h1>
         </div>
     </header>
     <main>
-        <main>
-            <section class="order-summary">
-                <h2>Order Summary</h2>
-                <ul class="order-items">
-                    <li>
-                        <img src="product1.jpg" alt="Product 1">
-                        <div>
-                            <p>Pure set</p>
-                            <p>$65.00</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="product2.jpg" alt="Product 2">
-                        <div>
-                            <p>Pure glow cream (Qty: 2)</p>
-                            <p>$32.00 each</p>
-                        </div>
-                    </li>
-                </ul>
-                <p class="subtotal">Subtotal: $129.00</p>
-                <p class="shipping">Shipping: $5.00</p>
-                <p class="total">Total Due: $134.00</p>
-            </section>
-            <section class="shipping-information">
-                <h2>Shipping Information</h2>
-                <div class="shipping-details">
-                    <p>Deliver to: Nirmal Priyankara</p>
-                    <p>HOME 711800797</p>
-                    <p>No 05, Janaudana Gammanaya, Batugampla, Handapangoda., Ingiriya, Kalutara, Western</p>
-                    <a href="#" class="edit-link">Change</a>
-                </div>
-                <form class="shipping-form" style="display: none;">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" value="Nirmal Priyankara" required>
-                    <label for="phone">Phone:</label>
-                    <input type="text" id="phone" value="711800797" required>
-                    <label for="address">Address:</label>
-                    <textarea id="address"
-                        required>No 05, Janaudana Gammanaya, Batugampla, Handapangoda., Ingiriya, Kalutara, Western</textarea>
-                    <button type="submit">Save</button>
-                </form>
-            </section>
-            <section class="payment-details">
-                <h2>Payment Details</h2>
-                <form>
-                    <label for="card-number">Card Number:</label>
-                    <input type="text" id="card-number" required>
-                    <label for="expiration-date">MM/YY:</label>
-                    <input type="text" id="expiration-date" required>
-                    <label for="cvc">CVC:</label>
-                    <input type="text" id="cvc" required>
-        
-        
-                    <button type="submit">Pay $134.00</button>
-                    <p style="text-align: center;">or</p>
-                    <div class="payment-methods">
-                        <button type="button" id="apple-pay">
-                            <img src="apple-pay-logo.png" alt="Apple Pay">
-                        </button>
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+            <ul class="order-items">
+                <li>
+                    <img src="images/pro1.jpeg" alt="Product 1">
+                    <div>
+                        <p>crew neck striped cuttee</p>
+                        <p>$60.00</p>
                     </div>
-                </form>
-            </section>
-        </main>
+                </li>
+                <li>
+                    <img src="images/pro2.jpeg" alt="Product 2">
+                    <div>
+                        <p>roung neck inclined cuttee<br> (Qty: 2)</p>
+                        <p>$50.00 each</p>
+                    </div>
+                </li>
+            </ul>
+            <p class="subtotal">Subtotal: $160.00</p>
+            <p class="shipping">Shipping: $5.00</p>
+            <p class="total">Total Due: $165.00</p>
+        </section>
+        <section class="shipping-information">
+            <h2>Shipping Information</h2>
+            <div class="shipping-details">
+                <p><b>Deliver to:</b> Nirmal Priyankara</p>
+                <p><b>Phone:</b> 711800797</p>
+                <p><b>Address:</b> No 05, Janaudana Gammanaya, Batugampla, Handapangoda., Ingiriya, Kalutara, Western</p>
+                <button class="change-button">Change</button>
+            </div>
+            
+        </section>
+        <section class="payment-details">
+            <h2>Payment Details</h2>
+            <form>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+                <label for="expiration-date">MM/YY:</label>
+                <input type="text" id="expiration-date" required>
+                <label for="cvc">CVC:</label>
+                <input type="text" id="cvc" required>
+        
+                <button type="submit">Pay $165.00</button>
+                <p style="text-align: center;">or</p>
+        
+                <div class="payment-methods">
+                    <button type="button" id="apple-pay">
+                        <img src="images/apple.png" alt="Apple Pay">
+                        <span>Apple Pay</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+
     </main>
     <footer>
         <p>&copy; 2024 KONIK Checkout. All rights reserved.</p>
