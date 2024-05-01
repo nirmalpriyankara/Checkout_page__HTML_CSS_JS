@@ -17,6 +17,9 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     border-radius: 5px;
+    margin-left: 30px;
+    margin-right: 20px;
+
 }
 
 .logo {
@@ -46,7 +49,7 @@ header {
 }
 
 .back-button:hover {
-    background-color: #333333;
+    background-color: #0056b3;
 }
 
 main {
@@ -107,8 +110,8 @@ section {
 }
 
 .change-button {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #000;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -234,10 +237,12 @@ section {
     cursor: pointer;
     margin-right: 10px;
 }
-.payment-details .payment-methods img{
+
+.payment-details .payment-methods img {
     width: 15px;
 
 }
+
 .payment-details .payment-methods button:last-child {
     margin-right: 0;
 }
@@ -246,6 +251,401 @@ section {
     background-color: #0056b3;
     color: #fff;
 }
-footer{
+
+footer {
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+body {
+        background-color: #fff;
+        color: #333;
+        font-family: Arial, sans-serif;
+        align-items: center;
+    }
+
+    header {
+        background-color: #ffffff;
+        padding: 10px;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin: 5px 5px;
+        width: 92%;
+
+    }
+
+    .logo {
+
+        font-weight: bold;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    .logo img {
+        height: 25px;
+        width: 25px;
+        margin-right: 5px;
+    }
+
+
+    .back-button {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #000000;
+        font-size: 15px;
+    }
+
+    .back-button:hover {
+        background-color: #0056b3;
+    }
+
+    main {
+        padding: 0px;
+        display: block;
+    }
+
+    section {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 5px;
+    }
+
+    .order-summary,
+    .shipping-information,
+    .payment-details {
+        width: 92%;
+        margin-right: 5px;
+    }
+
+    .order-summary h2,
+    .shipping-information h2,
+    .payment-details h2 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+
+    .order-summary .order-items li {
+        font-size: 15px;
+    }
+
+    .order-summary .order-items img {
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+    }
+
+    .order-summary .subtotal,
+    .order-summary .shipping,
+    .order-summary .total {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .shipping-details p {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .change-button {
+        background-color: #000;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .change-button:hover {
+        background-color: #0056b3;
+    }
+
+    .shipping-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .payment-details button {
+        background-color: #000;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .payment-details button:hover {
+        background-color: #0056b3;
+    }
+
+    .payment-details .payment-methods {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .payment-details label {
+        font-size: 15px;
+    }
+
+    .payment-details .payment-methods button {
+        align-items: center;
+        background-color: #000;
+        color: #fff;
+        padding: 15px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .payment-details .payment-methods img {
+        width: 10px;
+
+    }
+
+    .payment-details .payment-methods button:last-child {
+        margin-right: 0;
+    }
+
+    .payment-details .payment-methods button:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+    body {
+        background-color: #fff;
+        color: #333;
+        font-family: Arial, sans-serif;
+        align-items: center;
+    }
+
+    header {
+        background-color: #ffffff;
+        padding: 10px;
+        align-items: center;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin: 5px 5px;
+        width: 92%;
+
+    }
+
+    .logo {
+
+        font-weight: bold;
+        align-items: center;
+       font-size: 0.6rem;
+    }
+
+    .logo img {
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+
+
+    .back-button {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 4px 8px;
+        border-radius: 5px;
+        background-color: #000000;
+        font-size: 12px;
+    }
+
+    .back-button:hover {
+        background-color: #0056b3;
+    }
+
+    main {
+        padding: 0px;
+        display: block;
+    }
+
+    section {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 5px;
+    }
+
+    .order-summary,
+    .shipping-information,
+    .payment-details {
+        width: 92%;
+        margin-right: 5px;
+    }
+
+    .order-summary h2,
+    .shipping-information h2,
+    .payment-details h2 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    .order-summary .order-items li {
+        font-size: 12px;
+    }
+
+    .order-summary .order-items img {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .order-summary .subtotal,
+    .order-summary .shipping,
+    .order-summary .total {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .shipping-details p {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .change-button {
+        background-color: #000;
+        color: #fff;
+        padding: 4px 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .change-button:hover {
+        background-color: #0056b3;
+    }
+
+    .shipping-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .payment-details button {
+        background-color: #000;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .payment-details button:hover {
+        background-color: #0056b3;
+    }
+
+    .payment-details .payment-methods {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .payment-details label{
+       font-size: 12px;
+    }
+
+    .payment-details .payment-methods button {
+        align-items: center;
+        background-color: #000;
+        color: #fff;
+        padding: 15px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .payment-details .payment-methods img {
+        width: 10px;
+
+    }
+
+    .payment-details .payment-methods button:last-child {
+        margin-right: 0;
+    }
+
+    .payment-details .payment-methods button:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 10px;
+    }
 }
